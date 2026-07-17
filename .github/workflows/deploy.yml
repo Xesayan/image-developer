@@ -29,7 +29,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: cd web-app && npm ci
+        run: cd web-app && npm install
 
       - name: Build
         run: cd web-app && npm run build
