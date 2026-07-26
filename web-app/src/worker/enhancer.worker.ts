@@ -68,7 +68,7 @@ async function loadModel(): Promise<void> {
   if (!model) {
     try {
       console.log('Попытка загрузки модели');
-      model = await tf.loadLayersModel('/web_model/model.json');
+      model = await tf.loadLayersModel('/image-developer/web_model/model.json');
       console.log('LayersModel загружена успешно');
       console.log('Информация о модели:', model.inputs, model.outputs);
     } catch (error) {
