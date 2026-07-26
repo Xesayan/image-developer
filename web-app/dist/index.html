@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image developer</title>
+  <script type="module" crossorigin src="/image-developer/assets/index-Dw4befSH.js"></script>
+  <link rel="stylesheet" crossorigin href="/image-developer/assets/index-hTBV_62P.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Image developer</h1>
+            <p class="subtitle">Локальная нейросеть для улучшения качества изображений</p>
+        </header>
+
+        <div class="card">
+            <!-- Зона загрузки -->
+            <div class="upload-area" id="dropZone">
+                <input type="file" id="fileInput" accept="image/jpeg, image/png, image/jpg, image/bmp, image/heic"  hidden>
+                <label for="fileInput" class="upload-label">
+                    <span class="upload-icon">+</span>
+                    <span class="upload-text">Нажмите или перетащите фото сюда</span>
+                    <span class="upload-hint">Поддерживаются JPG, PNG, HEIC, BMP</span>
+                </label>
+            </div>
+
+            <!-- Статус и прогресс -->
+            <!-- Статус и прогресс -->
+            <div class="status-area" id="statusArea" style="display: none;">
+                <div class="status-header">
+                    <span class="status-text" id="statusText">Подготовка...</span>
+                    <span class="status-percent" id="statusPercent">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <button class="btn-cancel" id="cancelBtn">Отменить</button>
+            </div>
+
+            <!-- Результаты -->
+            <div class="results-area" id="resultsArea" style="display: none;">
+                <div class="comparison-grid">
+                    <div class="image-block">
+                        <span class="block-label">Оригинал</span>
+                        <div class="image-wrapper">
+                            <img id="originalImg" alt="Оригинал">
+                        </div>
+                    </div>
+                    <div class="image-block">
+                        <span class="block-label highlight">Результат</span>
+                        <div class="image-wrapper">
+                            <img id="resultImg" alt="Результат">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-reset" id="resetBtn">Загрузить другое фото</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Iconic World Cup Project · 2026</p>
+        </footer>
+    </main>
+</body>
+</html>

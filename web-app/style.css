@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.upload-area {
+    border: 1px dashed gray;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.status-area {
+    margin-bottom: 10px;
+}
+
+.status-header {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #eee;
+    border: 1px solid gray;
+}
+
+.progress-fill {
+    height: 100%;
+    background: blue;
+    width: 0%;
+}
+
+/* Стандартные браузерные кнопки — это главный маркер "студенческого" кода */
+button {
+    padding: 4px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.btn-cancel {
+    background: red;
+    color: white;
+    border: 1px solid darkred;
+}
+
+.btn-reset {
+    background: #ddd;
+    border: 1px solid #999;
+}
+
+.comparison-grid {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.image-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-label {
+    font-size: 11px;
+    color: gray;
+    margin-bottom: 2px;
+}
+
+.block-label.highlight {
+    color: blue;
+    font-weight: bold;
+}
+
+.image-wrapper {
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer {
+    font-size: 10px;
+    color: gray;
+    margin-top: 20px;
+}
